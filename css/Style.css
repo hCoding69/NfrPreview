@@ -50,6 +50,10 @@ body{
 .card .text h2{
     color: hsl(0, 0%, 100%);
     padding-bottom: 20px;
+    cursor: pointer;
+}
+.card .text h2:hover{
+    color: hsl(178, 100%, 50%);
 }
 .card .text p{
     color: hsl(215, 51%, 70%);
@@ -93,5 +97,19 @@ body{
     color: hsl(215, 51%, 70%);
 }
 .label span{
+    color: white;
+    cursor: pointer;
+}
+.label span:hover{
+    color: hsl(178, 100%, 50%);
+}
+.footer{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
     color: white;
 }
