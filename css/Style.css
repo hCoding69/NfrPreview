@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    position: relative;
+}
+.container{
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    position: relative;
+    border-radius: 15px;
+}
+.card::before{
+    content: "";
+    background-color: #0c1729;
+    width: calc(100% + 50px);
+    height: calc(100% + 80px);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.card .cube{
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.card .text{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card .text h2{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 20px;
+}
+.card .text p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    line-height: 1.8;
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+    font-size: 18px;
+    margin-right: 5px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: hsl(215, 32%, 27%) solid 1px;
+}
+.info .price{
+    color: hsl(178, 100%, 50%);;
+}
+.time{
+    color: hsl(215, 51%, 70%);
+    margin-right: 5px;
+}
+.two span{
+    color: hsl(215, 51%, 70%);
+}
+.label img{
+    width: 30px;
+    border: white 1px solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.label{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.label p{
+    color: hsl(215, 51%, 70%);
+}
+.label span{
+    color: white;
+}
